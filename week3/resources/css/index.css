@@ -1,0 +1,76 @@
+* {
+    font-family: "Open Sans", Trebuchet, sans-serif;
+    box-sizing: border-box;
+    text-decoration: #171717;
+  }
+
+  figure {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  figcaption {
+    text-align: center;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    height: 300px;
+  }
+
+  .title {
+    text-align: center;
+    color: #171717;
+    background-color: #C0511B; 
+  }
+
+  .title h1 {
+    font-weight: bold;
+    text-decoration: underline black;
+  }
+
+  .title h2 {
+    font-weight: 400;
+  }
+
+  .logo {
+    background-image: url("./images/logo2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .campus-img {
+    grid-area: 1 / 2 / 2 / 2;
+    background-image: url("./images/altc_uthealth_1200.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200%;
+    justify-self: stretch;
+  }
+
+  .body {
+    padding: 10px 0 0 0;
+    columns: 3;
+    clear: both;
+    background-color: #F7F4F0;
+  }
+
+  @media screen and (max-width: 812px) {
+    .header {
+      display: flex;
+      flex-direction: column;
+    }
+
+/*I can't figure out how to get this logo to align center after it reads the media query*/    
+    .logo { 
+      background-image: url("./images/UTHealth_UTHSCSA_H_CMYK.jpg");
+      height: 100%;
+    }
+
+    .campus-img {
+      display: none;
+    }
+  }
