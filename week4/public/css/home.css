@@ -1,13 +1,6 @@
-* {
-    font-family: "Open Sans", Trebuchet, sans-serif;
-    box-sizing: border-box;
-    text-decoration: #171717;
-  }
-
   figure {
-    margin-left: auto;
-    margin-right: auto;
     overflow: hidden;
+    text-align: center;
   }
 
   figcaption {
@@ -51,26 +44,29 @@
     justify-self: stretch;
   }
 
-  .body {
+  .article-body {
     padding: 10px 0 0 0;
     columns: 3;
     clear: both;
     background-color: #F7F4F0;
   }
 
-  @media screen and (max-width: 812px) {
-    .header {
-      display: flex;
-      flex-direction: column;
-    }
+  .content {
+    padding: 10px 0 0 0;
+    background-color: #F7F4F0;
+  }
 
-/*I can't figure out how to get this logo to align center after it reads the media query*/    
-    .logo { 
-      background-image: url("./images/UTHealth_UTHSCSA_H_CMYK.jpg");
-      height: 100%;
-    }
+  .content h2 {
+    text-align: center;
+  }
 
-    .campus-img {
-      display: none;
-    }
+  .content .center {
+    text-align: center;
+  }
+
+  .about-content {
+    padding: 10px 0 0 0;
+    columns: 2;
+    clear: both;
+    background-color: #F7F4F0;
   }

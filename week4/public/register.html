@@ -4,19 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/flexbox.css" />                                  <!--fixmee-->
+    <link rel="stylesheet" href="./css/navBar.css" />
+    <link rel="stylesheet" href="./css/home.css"/>
     <title>Register</title>
   </head>
   <body>
-    <div class="main wrapper">                                                          <!--fixmee-->
-      <header>
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="./about.html">About</a></li>                                   <!--fixmee-->
-          </ul>
-        </nav>
-      </header>
+    <div class="main wrapper">
+
+      <div class="header">
+        <div class="title">
+            <h1>The UT Health Chronicle</h1>
+            <h2 id="todaysDate"></h2>    
+        </div>
+      <div class="logo"></div>
+      <div class="campus-img"></div>
+      </div>
+
+      <ul class="topnav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li class="right"><a href"">Logout</a></li>
+        <!-- <li class="right tooltip"><a>Logout</a><span class="tooltiptext">Under Construction</span></li>  TODO: add tooltip-->
+      </ul>
 
       <div class="content">
         <div class="center">
@@ -35,23 +44,16 @@
               <input id="password" type="password" placeholder="Password" />
             </label>
             <button onclick="doRegister(event)">Register</button>
-            <a href="/">Already signed up?</a>
           </form>
+          <br>
+          <a href="/">Already signed up?</a>
         </div>
       </div>
 
-      <footer>
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-          </ul>
-        </nav>
-        <p>Author: <a href="https://github.com/chan1ks">Morgan Worrell</a></p>
-      </footer>
     </div>
   </body>
   <script src="./src/service-helpers.js"></script>
   <script src="./src/auth.service.js"></script>
   <script src="./src/app.js"></script>
+  <script src="src/date.js"></script>
 </html>

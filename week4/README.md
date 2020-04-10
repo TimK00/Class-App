@@ -1,3 +1,3 @@
-# week2
+# Module 4 - Integrating Javascript and Database
 
-week 3 class app
+Hooking up class app and backend service
