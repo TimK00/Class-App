@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Tim Kirkpatrick">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="css/index.css" type="text/css" rel="stylesheet">
+        <link href="css/modal.css" type="text/css" rel="stylesheet">
+        <title>UT Health Chronicle: Fluid Layout</title>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    </head>
+        <div class="header">
+            <div class="title">
+                <h1>The UT Health Chronicle</h1>
+                <h2 id="todaysDate"></h2>    
+            </div>
+            <div class="logo"></div>
+            <div class="campus-img"></div>
+        </div>
+        <div class="body">
+            SLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat ac tincidunt vitae semper quis lectus nulla. Non odio euismod lacinia at quis risus. Nulla pharetra diam sit amet nisl suscipit. A iaculis at erat pellentesque adipiscing. Rutrum quisque non tellus orci ac auctor. Ultricies lacus sed turpis tincidunt id aliquet. Sed faucibus turpis in eu mi bibendum. Dui nunc mattis enim ut tellus elementum sagittis. In metus vulputate eu scelerisque felis imperdiet.
+
+            Nec nam aliquam sem et tortor consequat. Dignissim suspendisse in est ante in nibh mauris. Ornare arcu odio ut sem nulla pharetra diam sit. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Nibh venenatis cras sed felis eget velit aliquet sagittis. Arcu dui vivamus arcu felis bibendum ut tristique et. Mi quis hendrerit dolor magna. Sed nisi lacus sed viverra tellus in. Magna etiam tempor orci eu lobortis elementum nibh. Vivamus arcu felis bibendum ut tristique. Vulputate odio ut enim blandit volutpat. Facilisi morbi tempus iaculis urna id volutpat. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Gravida neque convallis a cras.
+            
+            Neque laoreet suspendisse interdum consectetur libero id. Consequat interdum varius sit amet mattis vulputate enim. Ultrices eros in cursus turpis. Integer malesuada nunc vel risus commodo viverra. Feugiat scelerisque varius morbi enim nunc. Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Laoreet non curabitur gravida arcu ac. Justo laoreet sit amet cursus sit amet dictum. Pellentesque habitant morbi tristique senectus. In cursus turpis massa tincidunt dui ut ornare lectus sit. Malesuada fames ac turpis egestas. Pretium nibh ipsum consequat nisl vel pretium lectus. Senectus et netus et malesuada fames ac turpis egestas integer. Risus sed vulputate odio ut enim blandit volutpat. Lacus suspendisse faucibus interdum posuere lorem. Sit amet nulla facilisi morbi tempus iaculis urna id. Enim ut sem viverra aliquet eget sit amet. Pellentesque sit amet porttitor eget dolor.
+            
+            A pellentesque sit amet porttitor eget. Auctor urna nunc id cursus. Consectetur a erat nam at lectus urna duis convallis. Molestie at elementum eu facilisis sed odio morbi quis. Id interdum velit laoreet id donec ultrices tincidunt. Et molestie ac feugiat sed. In cursus turpis massa tincidunt dui ut ornare lectus sit. Faucibus et molestie ac feugiat sed. Sit amet nulla facilisi morbi. In hac habitasse platea dictumst. Felis bibendum ut tristique et egestas quis ipsum. Diam in arcu cursus euismod quis viverra nibh. Urna et pharetra pharetra massa. Et malesuada fames ac turpis egestas sed tempus urna et. Ornare massa eget egestas purus viverra. Sed faucibus turpis in eu mi bibendum neque. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum.
+            
+            Et netus et malesuada fames ac turpis egestas. Nisi scelerisque eu ultrices vitae auctor eu augue. Interdum velit euismod in pellentesque. Vitae semper quis lectus nulla at volutpat diam ut. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Turpis egestas integer eget aliquet nibh praesent tristique. Arcu dui vivamus arcu felis bibendum ut tristique. Amet consectetur adipiscing elit pellentesque. Varius sit amet mattis vulputate enim. Lobortis mattis aliquam faucibus purus in massa tempor nec feugiat. Tempor nec feugiat nisl pretium fusce id.
+            <figure>
+                <img src="css/images/academics_gradschool_1.jpg">
+                <figcaption>Look a caption</figcaption>
+            </figure>
+        </div>
+
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                      <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                      <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" checked>Remember me</label>
+                    </div>
+                      <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                  <p>Not a member? <a href="#">Sign Up</a></p>
+                  <p>Forgot <a href="#">Password?</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <footer>
+            <nav>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+              </ul>
+            </nav>
+            <p>Author: <a href="https://github.com/TimK00">Tim Kirkpatrick</a></p>      <!--fixmee-->
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+    <script src="src/app.js"></script>
+    <script type="text/javascript">
+        $(window).on('load',function(){
+            $('#myModal').modal('show');
+        });
+    </script>
+</html>
