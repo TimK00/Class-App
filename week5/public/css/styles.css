@@ -1,0 +1,77 @@
+  figure {
+    overflow: hidden;
+    text-align: center;
+  }
+
+  figcaption {
+    text-align: center;
+  }
+
+  span {
+    padding: 0 10px;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    height: 300px;
+  }
+
+  .title {
+    text-align: center;
+    color: #171717;
+    background-color: #C0511B; 
+  }
+
+  .title h1 {
+    font-weight: bold;
+    text-decoration: underline black;
+  }
+
+  .title h2 {
+    font-weight: 400;
+  }
+
+  .logo {
+    background-image: url("./images/logo2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .campus-img {
+    grid-area: 1 / 2 / 2 / 2;
+    background-image: url("./images/altc_uthealth_1200.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200%;
+    justify-self: stretch;
+  }
+
+  .article-body {
+    padding: 10px 0 0 0;
+    columns: 3;
+    clear: both;
+    background-color: #F7F4F0;
+  }
+
+  .content {
+    padding: 10px 0 0 0;
+    background-color: #F7F4F0;
+    height: 600px;
+  }
+
+  .content h2 {
+    text-align: center;
+  }
+
+  .content .center {
+    text-align: center;
+  }
+
+  .about-content {
+    padding: 10px 0 0 0;
+    columns: 2;
+    clear: both;
+    background-color: #F7F4F0;
+  }

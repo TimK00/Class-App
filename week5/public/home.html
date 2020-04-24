@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/navBar.css" />
+    <link rel="stylesheet" href="./css/general.css"/>
+    <title>Articles</title>
+  </head>
+  <body>
+    <div class="main wrapper">
+
+      <div class="header">
+        <div class="title">
+            <h1>The UT Health Chronicle</h1>
+            <h2 id="todaysDate"></h2>    
+        </div>
+      <div class="logo"></div>
+      <div class="campus-img"></div>
+      </div>
+
+      <ul class="topnav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li class="right"><a href"" onClick="doLogout(event)">Logout</a></li>
+      </ul>
+
+      <div class="content">
+        <div id="articles">
+          <div>Loading...</div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script src="./src/api.config.js"></script>
+  <script src="./src/simple-storage.js"></script>
+  <script src="./src/service-helpers.js"></script>
+  <script src="./src/auth.service.js"></script>
+  <script src="./src/articles.service.js"></script>
+  <script src="./src/route-guard.js"></script>
+  <script src="./src/build-articles-list.js"></script>
+  <script src="./src/app.js"></script>
+  <script src="src/date.js"></script>
+</html>
