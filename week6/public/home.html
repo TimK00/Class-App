@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/navBar.css" />
+    <link rel="stylesheet" href="./css/general.css"/>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+    <title>Articles</title>
+  </head>
+  <body>
+    <div class="main wrapper">
+
+      <div class="header">
+        <div class="title">
+            <h1>The UT Health Chronicle</h1>
+            <h2 id="todaysDate"></h2>    
+        </div>
+      <div class="logo"></div>
+      <div class="campus-img"></div>
+      </div>
+
+      <ul class="topnav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li class="right"><a href"" onClick="doLogout(event)">Logout</a></li>
+      </ul>
+
+      <div class="container">
+        <div class="article-form">
+          <form>
+            <div class="form-row">
+              <div class="col-md-6">
+                <label class="sr-only" for="formInputArticleName">Article Name</label>
+                <input
+                  id="formInputArticleName"
+                  class="form-control"
+                  type="text"
+                  name="article-name"
+                  placeholder="Article Name"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="sr-only" for="formInputAuthor">Author Name</label>
+                <input
+                  id="formInputAuthor"
+                  class="form-control"
+                  type="text"
+                  name="author-name"
+                  placeholder="Author Name"
+                />
+              </div>
+              <div class="col-md-3">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  onclick="doAddArticle(event)"
+                >
+                  ADD
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+  
+        <div id="articles">
+          <div>Loading...</div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script src="./src/api.config.js"></script>
+  <script src="./src/simple-storage.js"></script>
+  <script src="./src/route-guard.js"></script>
+  <script src="./src/service-helpers.js"></script>
+  <script src="./src/auth.service.js"></script>
+  <script src="./src/articles.service.js"></script>
+  <script src="./src/build-articles-list.js"></script>
+  <script src="./src/add-article.js"></script>
+  <script src="./src/auth.js"></script>
+  <script src="src/date.js"></script>
+</html>

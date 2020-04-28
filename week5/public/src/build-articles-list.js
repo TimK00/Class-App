@@ -7,7 +7,7 @@
  *    <div class="article-item-block">
  *      <span class="article-checkbox"><input type="checkbox"></span>
  *      <span class="article-name">Article name</span>
- *      <span class="article-status">pending</span>
+ *      <span class="article-author">pending</span>
  *      <span class="article-date">date create</span>
  *    </div>
  *  </li>
@@ -47,18 +47,14 @@
         nameSpan.className = 'article-name';
         nameSpan.innerText = article.article_name;
   
-        const statusSpan = document.createElement('span');
-        statusSpan.className = 'article-author';
-        statusSpan.innerText = article.author;
-  
-        // const dateSpan = document.createElement('span');
-        // dateSpan.className = 'article-date';
-        // dateSpan.innerText = article.created_date;
+        const articleSpan = document.createElement('span');
+        articleSpan.className = 'article-author';
+        articleSpan.innerText = article.author;
   
         // add list item
         block.appendChild(checkboxSpan);
         block.appendChild(nameSpan);
-        block.appendChild(statusSpan);
+        block.appendChild(articleSpan);
         
         li.appendChild(block);
         ul.appendChild(li);
