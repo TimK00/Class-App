@@ -13,6 +13,11 @@ const doAddArticle = async (e) => {
       alert('Please enter a article name.');
       return;
     }
+
+    if (!author) {
+      alert('Please enter an author\'s name.');
+      return;
+    }
   
     const res = await addArticle({ article_name, author });
   
@@ -21,4 +26,3 @@ const doAddArticle = async (e) => {
     }
     articleInput.value = '';
   };
-  
