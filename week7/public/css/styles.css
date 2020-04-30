@@ -1,0 +1,148 @@
+figure {
+  overflow: hidden;
+  text-align: center;
+}
+
+figcaption {
+  text-align: center;
+}
+
+span {
+  padding: 0 10px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  height: 300px;
+}
+
+.title {
+  text-align: center;
+  color: #171717;
+  background-color: #C0511B; 
+}
+
+.title h1 {
+  font-weight: bold;
+  text-decoration: underline black;
+}
+
+.title h2 {
+  font-weight: 400;
+}
+
+.logo {
+  background-image: url("./images/logo2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10px;
+}
+
+.campus-img {
+  grid-area: 1 / 2 / 2 / 2;
+  background-image: url("./images/altc_uthealth_1200.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200%;
+  justify-self: stretch;
+}
+
+.article-body {
+  padding: 10px 0 0 0;
+  columns: 3;
+  clear: both;
+  background-color: #F7F4F0;
+}
+
+.content {
+  padding: 10px 0 0 0;
+  background-color: #F7F4F0;
+  height: 600px;
+}
+
+.container {
+  max-width: 100% !important;
+  height: 600px;
+  background-color: #F7F4F0;
+}
+
+.content h2 {
+  text-align: center;
+}
+
+.content .center {
+  text-align: center;
+}
+
+.about-content {
+  padding: 10px 0 0 0;
+  columns: 2;
+  clear: both;
+  background-color: #F7F4F0;
+}
+
+.card-body {
+  background-color: #F7F4F0;
+}
+
+.card-split {
+  align-items: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  padding: 20px;
+}
+
+.card-title,
+.form-group-btn {
+  padding-left: 1.25rem;
+}
+
+.right-border {
+  border-right: 1px solid grey;
+  padding-right: 50px;
+}
+
+.left-border {
+  padding-left: 50px;
+}
+
+.task-form {
+  margin: 50px 100px;
+}
+
+.list-group-item {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-group-item span {
+  width: 200px;
+}
+
+.form-row {
+  padding: 10px 0;
+}
+
+.btn.btn-primary {
+  color: white;
+  background-color: #0D4857;
+  border-color: #0D4857;
+}
+
+.btn.btn-primary:hover {
+  color: white;
+  background-color: #4BC0C4;
+  border-color: #4BC0C4;
+}
+
+footer {
+  padding: 16px 8px;
+  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+}
