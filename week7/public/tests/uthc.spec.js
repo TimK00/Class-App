@@ -11,10 +11,8 @@ describe('UTHC App', () => {
 
   it('should add a article', async () => {
     const newArticle = {
-      article_id: 0,
       article_name: 'Third article',
-      status: 'pending',
-      created_date: '2020-04-14 22:50:32',
+      author: 'Billy Beans',
     };
     const addArticleServiceSpy = spyOn(articlesService, 'addArticle');
 
@@ -28,10 +26,8 @@ describe('UTHC App', () => {
 
   it('should delete a article', async () => {
     const existingArticle = {
-      article_id: 0,
       article_name: 'Third article',
-      status: 'pending',
-      created_date: '2020-04-14 22:50:32',
+      author: 'Billy Beans',
     };
     const deleteArticleServiceSpy = spyOn(articlesService, 'deleteArticle');
 
