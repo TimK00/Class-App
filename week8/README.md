@@ -1,4 +1,4 @@
-# Module 7 - UI/UX improvements
+# Module 8 - more security features and update user
 
-Making adjustments to file structure as well as improving front-end design
+Does not function - issue with server key/cert. 
 
